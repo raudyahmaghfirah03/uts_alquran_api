@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/alquran_api/',
+  base: '/uts_alquran_api/',
   plugins: [vue()],
   resolve: {
     alias: {

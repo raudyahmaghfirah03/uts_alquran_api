@@ -76,8 +76,24 @@ export default {
 </script>
 
 <template>
-  <div class="text-center">
-    <h1>Surah {{ surah.name_complex }}</h1>
+  <hr class="surah">
+  <div class="text-start mt-5">
+    <img src="https://img.icons8.com/small/30/000000/multi-edit.png" alt="bab">
+    <h2>Surah {{ surah.name_simple }}</h2>
     <div v-html="info"></div>
   </div>
+
 </template>
+<style scoped>
+
+.text-start img{
+  position: relative;
+  float: left;
+  margin: 0 10px 0 10px;
+  padding: 2px;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+
+</style>

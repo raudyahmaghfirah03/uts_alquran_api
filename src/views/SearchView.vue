@@ -88,11 +88,11 @@ export default {
 
 <template>
   <div class="text-lg-center mt-5">
-    <h1 class="text-lg-center">Masukkan nomor surah!</h1>
+    <h1 class="text-lg-center">Masukkan nomor surah</h1>
     <input v-model="cari" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
     <div v-if="cari">
       <div class="mt-5">
-        <h1>{{ judul?.name_complex }}</h1>
+        <h1>{{ judul?.name_simple }}</h1>
         <br>
         <h1>{{ judul?.name_arabic }}</h1>
         <br>
@@ -110,7 +110,7 @@ export default {
     <div v-if="cari" v-for="(ayat,index) in surah" :key="index" class="card">
       <div class="card-body">
         <h5 class="card-title text-end  mt-3">{{ ayat?.text_uthmani}}{{ayat?.verse_key}}</h5>
-        <p class="card-title text-start mt-3" v-html="translations[index]?.text"></p>
+        <p class="card-title text-start mt-3"  v-html="translations[index]?.text"></p>
       </div>
     </div>
   </div>

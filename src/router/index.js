@@ -18,6 +18,7 @@ const router = createRouter({
       component: () => import("../views/AboutView.vue"),
     },
     {
+      //id = parameter
       path: "/juzs/:id",
       name: "juzs",
       // route level code-splitting
@@ -41,16 +42,6 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import("../views/SearchView.vue"),
     },
-    {
-      path: "/random",
-      name: "random",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import("../views/RandomView.vue"),
-    },
-
-
   ],
 });
 
